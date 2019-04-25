@@ -37,7 +37,7 @@ class ViewController: UIViewController {
             totalLabel.text = String(total)
             
         }
-        //view.endEditing(true)
+        view.endEditing(true)
     }
     @IBAction func restart(_ sender: UIButton) {
         priceTextField.text = nil
