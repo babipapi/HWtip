@@ -27,15 +27,17 @@ class ViewController: UIViewController {
         let price = Int(priceText)
         let tip = Int(tipText)
         let person = Int(personText)
-        let total = price! + (price! * tip! / 100)
+       // let total = price! + (price! * tip! / 100)
         if price != nil,tip != nil,person != nil {
+            let total = price! + (price! * tip! / 100)
             let avg = total / person!
             avgLabel.text = String(avg)
         } else if price != nil,tip != nil{
+            let total = price! + (price! * tip! / 100)
             totalLabel.text = String(total)
             
         }
-        view.endEditing(true)
+        //view.endEditing(true)
     }
     @IBAction func restart(_ sender: UIButton) {
         priceTextField.text = nil
